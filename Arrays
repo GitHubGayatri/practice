@@ -1,0 +1,24 @@
+
+
+package first_java_package;
+
+public class Arrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int[] myarray1 = {100,90};
+
+System.out.println("0 index:" + myarray1[0]);
+System.out.println("1 index:" + myarray1[1]);
+
+
+String[] mystrarray1 = {"aws", "azure", "microsoft"};
+
+System.out.println("0 index:" + mystrarray1[1]);
+
+		
+		
+	}
+
+}
+

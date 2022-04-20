@@ -1,0 +1,45 @@
+package first_java_package;
+
+public class Methods {
+
+	
+	
+		public static void studentgrades(String Studentname , int score) {
+			String grades;
+			if(score >= 80 && score <= 100) {
+				grades = "A";
+			}
+			else
+			
+				if(score>=60 && score <= 80)
+				{
+					grades ="B";
+				}
+				else 
+					if(score >= 40 && score <= 60) {
+						grades = "C";
+						}
+					else
+						grades = "D";
+			
+				
+			
+				System.out.println("Grade of " + Studentname + " is: " + grades) ;
+			
+		
+		}
+
+
+
+
+public static void main(String[] args) {
+	
+	studentgrades("John", 85);
+	studentgrades("Adam", 55);
+	studentgrades("eve", 77);
+	studentgrades("sean", 25);
+}
+
+
+}
+

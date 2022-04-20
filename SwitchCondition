@@ -1,0 +1,49 @@
+package first_java_package;
+
+public class SwitchCondition {
+
+	
+
+	
+
+
+
+	public static final int case1=0;
+
+
+
+	public static void main(String[] args) {
+		
+		
+		int numDays =numOfDays(2016,1);
+		
+				System.out.println("number of days in given month " + numDays);
+	}
+		
+		
+
+	static int numOfDays(int year, int month) {
+	int numDays=0;
+		
+		switch (month) {
+		case 1:
+				numDays = 31;
+			break;
+			
+			case 2:
+				if (year % 400 == 0) {
+					numDays= 29;}
+					else 
+					{
+						numDays = 28;
+					}
+		break;
+		
+		
+		default:
+	System.out.println("Invalid month");
+		}
+		return numDays;
+	}
+
+}
