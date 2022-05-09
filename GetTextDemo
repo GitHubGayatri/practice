@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+
 public class GettextDemo {
 	private WebDriver driver;
 	private String baseUrl;
@@ -32,6 +33,14 @@ public class GettextDemo {
 		WebElement buttonelement = driver.findElement(By.id("opentab"));	
 		String S = buttonelement.getText();
 		System.out.println("Text on the element is : " + S);
+                               
+
+                 WebElement getvalue = driver.findelement(By.name("enter-name"));
+String V = getvalue.getAttribute("class");
+system.out.println(V);    
+               
+
+
 		
 	}
 	
@@ -42,4 +51,4 @@ public class GettextDemo {
 	}
 	
 	
-}
+
