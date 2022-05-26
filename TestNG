@@ -1,0 +1,35 @@
+package testClasses;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import appcode.ToTest;
+
+public class TestNGAsserts {
+  @Test
+  public void testsum() {
+	  System.out.println("Running test --> test Sum");
+	  ToTest obj = new ToTest();
+	  int result = obj.sumnumber(1, 2);
+	  //System.out.println("sum of the numbers is: " + result);
+	  Assert.assertEquals(result, 3);
+  }
+@Test
+  public void testStrings() {
+  
+	  System.out.println("Running test --> test strings");
+	  String expectedstring = "Hello World";
+	  ToTest obj = new ToTest();
+	  String result1 = obj.addStrings("Hello","World");
+	  Assert.assertEquals(result1, expectedstring);
+	  
+	  
+  }
+@Test
+public void testArrays() {
+	System.out.println("Running test --> Arrays");
+	int[]  arrayExample = {1,2,3};
+	ToTest obj = new ToTest();
+	int[] result2 = obj.getArray();
+	Assert.assertEquals(result2,  arrayExample);
+}
+}
